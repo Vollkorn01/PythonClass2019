@@ -3,6 +3,7 @@
 Title: Customer Map on demographics Data solutions for Exercise 3 (Tabs)
 """
 import pandas as pd
+import numpy as np
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -114,7 +115,7 @@ def update_figure(selected_gender, start_date, end_date):
                         groups = filtered_df['zip_city'],
                         aggregations = [dict(target = filtered_df['Customer'], func = 'count', enabled = True)]
                                         )
-                                        ]
+                                        ]#here changes of code
                         )
                     ]
             }
