@@ -8,7 +8,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from datetime import datetime as dt
 import dash_table
-
+import numba
 
 demographics = pd.read_csv('data/demographics.csv')
 demographics["Birthdate"] = pd.to_datetime(demographics["Birthdate"],
